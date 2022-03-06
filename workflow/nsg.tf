@@ -4,8 +4,8 @@ resource "azurerm_network_security_group" "git-workflow" {
   resource_group_name = azurerm_resource_group.git-workflow.name
 
   security_rule {
-    name                       = "rule01"
-    priority                   = 100
+    name                       = "nsgrule01"
+    priority                   = 500
     direction                  = "outbound"
     access                     = "Allow"
     protocol                   = "Tcp"
