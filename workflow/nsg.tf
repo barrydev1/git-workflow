@@ -5,7 +5,7 @@ resource "azurerm_network_security_group" "git-workflow" {
 
   security_rule {
     name                       = "nsgrule01"
-    priority                   = 500
+    priority                   = 600
     direction                  = "outbound"
     access                     = "Allow"
     protocol                   = "Tcp"
